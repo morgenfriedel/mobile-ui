@@ -1,6 +1,6 @@
 $('#wrap-header header i').click(function(){
 	
-	if ($('#main-dropdown').css('display', 'none')){
+	if ($('#main-dropdown').css('display') === 'none'){
 		
 		$('#main-dropdown').slideDown({
 			duration: 400,
@@ -27,7 +27,7 @@ $.each(footerButtons, function(i, val){
 
 	socialButton.click(function(){
 		
-		if (socialShare.css('display', 'none')){
+		if (socialShare.css('display') === 'none'){
 
 			$('#foot-share li').hide("slide", {
 				direction: "down",
